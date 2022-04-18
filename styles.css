@@ -1,0 +1,28 @@
+#calculator {
+    width: max-content;
+
+    display: flex;
+    flex-direction: column;
+}
+#top-buttons {
+    display: flex;
+}
+#input-buttons {
+    display: flex;
+}
+
+#number-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+#operation-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    font-size: 20px;
+    padding: 0.5em;
+}
