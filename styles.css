@@ -1,8 +1,17 @@
 #calculator {
-    width: max-content;
-
     display: flex;
     flex-direction: column;
+
+    box-sizing: border-box;
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    margin: 50px auto;
+
+    border: 5px grey outset;
+    border-radius: 5%;
+
+    background-color: lightgrey;
 }
 #top-buttons {
     display: flex;
