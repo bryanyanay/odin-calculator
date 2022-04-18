@@ -1,0 +1,23 @@
+The operation buttons can have data- attributes storing what operation they represent
+
+the first number starts at 0; if it is 0, then pressing any nonzero number will replace it
+
+lets display the first number and the operation while entering the second number
+
+When an operation button is pressed:
+ - we record the current number as the first number
+ - we record the operation, displaying the first number and the operation
+ - let them input a new number
+
+Then when the = button is pressed:
+ - we perform the operation, and display the result in the input field
+ - this means that this resulting number becomes the first number if we press another operation button
+>- what if the = button is pressed when we don't have an operation yet?
+>>- it shouldn't do anything, leaving our current first number input the same
+
+
+But if another operation button is pressed instead:
+ - we perform the operation, and set the result as the first number, and let them input a new number
+ - this is equivalent to pressing =, then pressing an operation button
+
+
