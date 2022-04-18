@@ -3,15 +3,17 @@
     flex-direction: column;
 
     box-sizing: border-box;
-    width: 250px;
-    height: 350px;
+    width: 350px;
+    height: 450px;
     padding: 20px;
     margin: 50px auto;
 
-    border: 5px grey outset;
+    border: 6px rgb(158, 158, 158) outset;
     border-radius: 5%;
 
     background-color: lightgrey;
+
+    box-shadow: 15px 15px 20px lightblue;
 }
 #top-buttons {
     display: flex;
@@ -29,6 +31,23 @@
 #operation-buttons {
     display: flex;
     flex-direction: column;
+}
+
+#display {
+    box-sizing: border-box;
+    height: 100px;
+    padding: 1em;
+
+    border: 3px grey inset;
+    border-radius: 0.5em;
+    background-color: rgb(24, 24, 24);
+
+    color: white;
+
+    font-family: sans-serif;
+}
+#display p {
+    text-align: right;
 }
 
 button {
