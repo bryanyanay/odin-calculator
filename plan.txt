@@ -20,4 +20,16 @@ But if another operation button is pressed instead:
  - we perform the operation, and set the result as the first number, and let them input a new number
  - this is equivalent to pressing =, then pressing an operation button
 
+------------------------
+we'll have 2 main actions
+ - executeOperation: execute the operation with the current prevResult and current input, and display the result in the input window
+ - prepareOperation: move the current input into prevResult, set the operation, and let the user input the next number
+
+pressing = does an executeOperation
+pressing an operation button does:
+ - a prepareOperation if the current prevResult is empty
+ - an executeOperation and then a prepareOperation if the current prevResult isn't empty
+
+we'll also have the operation button stay toggled on while it is in action
+
 
