@@ -25,11 +25,15 @@ we'll have 2 main actions
  - executeOperation: execute the operation with the current prevResult and current input, and display the result in the input window
  - prepareOperation: move the current input into prevResult, set the operation, and let the user input the next number
 
-pressing = does an executeOperation
+pressing = does:
+ - nothing if the current prevResult is empty (i.e., if we haven't had a prepareOperation yet)
+ - an executeOperation if the current prevResult is set (and thus we'd also have an operation set)
 pressing an operation button does:
  - a prepareOperation if the current prevResult is empty
  - an executeOperation and then a prepareOperation if the current prevResult isn't empty
 
 we'll also have the operation button stay toggled on while it is in action
+ - so an executeOperation will detoggle the button toggled on by the prepareOperation
+ - so a prepareOperation will toggle the selected button on
 
 
