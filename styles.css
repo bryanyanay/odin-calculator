@@ -59,21 +59,37 @@
 }
 
 #display {
+    display: flex; 
+    flex-direction: column;
+
     box-sizing: border-box;
     height: 100px;
-    padding: 1em;
+    padding: 10px 20px;
 
     border: 3px grey inset;
     border-radius: 0.5em;
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(41, 41, 41);
 
     color: white;
 
     font-family: sans-serif;
 }
-#display p {
+#display #prev-result {
     text-align: right;
+
+    color: rgb(197, 197, 197);
+
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: auto;
 }
+#display #input-field {
+    text-align: right;
+
+    font-size: 30px;
+    margin: 0;
+}
+
 
 button {
     font-size: 20px;
