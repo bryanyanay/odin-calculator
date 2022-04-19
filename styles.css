@@ -14,6 +14,11 @@
     background-color: lightgrey;
 
     box-shadow: 15px 15px 20px lightblue;
+
+    transition: all .2s ease-in-out;
+}
+#calculator:hover {
+    transform: scale(1.02);
 }
 #top-buttons {
     display: flex;
