@@ -129,4 +129,5 @@ button:hover {
 #equals-button:hover, 
 #operation-buttons button:hover {
     background-color: hsl(224, 80%, 55%);
+    border-color: rgb(50, 96, 150);
 }
