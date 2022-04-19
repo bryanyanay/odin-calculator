@@ -1,3 +1,8 @@
+@font-face {
+    font-family: calc-font;
+    src: url(calculator-font.ttf);
+}
+
 #calculator {
     display: flex;
     flex-direction: column;
@@ -72,7 +77,7 @@
 
     color: white;
 
-    font-family: sans-serif;
+    font-family: calc-font;
 }
 #display #prev-result {
     text-align: right;
