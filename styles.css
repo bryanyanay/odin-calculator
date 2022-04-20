@@ -26,7 +26,7 @@
     transform: scale(1.02);
 }
 
-
+/* BUTTONS */
 #top-buttons {
     display: flex;
     gap: 20px;
@@ -36,8 +36,6 @@
 #top-buttons button {
     flex: 1;
 }
-
-
 #input-buttons {
     display: flex;
     justify-content: space-between;
@@ -48,13 +46,11 @@
 #input-buttons #number-buttons {
     flex: 1;
 }
-
 #number-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
 }
-
 #operation-buttons {
     display: flex;
     flex-direction: column;
@@ -63,6 +59,61 @@
     width: 50px;
 }
 
+
+button {
+    font-size: 20px;
+    padding: 0.5em;
+
+    border: 3px outset rgb(160, 160, 160);
+    border-radius: 10px;
+}
+button:hover {
+    background-color: rgb(207, 207, 207);
+}
+button:active {
+    background-color: rgb(160, 160, 160);
+}
+
+
+#clear-button {
+    color: white;
+    background-color: hsl(9, 100%, 41%);
+    border-color: rgb(155, 36, 0);
+    border-width: 5px;
+}
+#clear-button:hover {
+    background-color: hsl(9, 100%, 35%);
+}
+#clear-button:active {
+    background-color: rgb(155, 36, 0);
+}
+
+#equals-button, 
+#operation-buttons button {
+    background-color: rgb(75, 123, 255);
+    border-color: rgb(0, 65, 139);
+
+    color: white;
+
+    font-weight: bold;
+}
+#equals-button:hover, 
+#operation-buttons button:hover {
+    background-color: hsl(224, 80%, 55%);
+    border-color: rgb(50, 96, 150);
+}
+#equals-button:active, 
+#operation-buttons button:active {
+    background-color: rgb(0, 65, 139);
+}
+
+#operation-buttons button.down {
+    border-style: inset;
+    background-color: hsl(224, 74%, 35%);
+    border-color: rgb(10, 32, 56);
+}
+
+/* CALCULATOR DISPLAY */
 
 #display {
     display: flex; 
@@ -97,44 +148,3 @@
     margin: 0;
 }
 
-
-button {
-    font-size: 20px;
-    padding: 0.5em;
-
-    border: 3px outset rgb(160, 160, 160);
-    border-radius: 10px;
-}
-button:hover {
-    background-color: rgb(207, 207, 207);
-}
-
-#clear-button {
-    color: white;
-    background-color: hsl(9, 100%, 41%);
-    border-color: rgb(167, 39, 0);
-    border-width: 5px;
-}
-#clear-button:hover {
-    background-color: hsl(9, 100%, 35%);
-}
-
-#equals-button, 
-#operation-buttons button {
-    background-color: rgb(75, 123, 255);
-    border-color: rgb(57, 111, 173);
-
-    color: white;
-
-    font-weight: bold;
-}
-#equals-button:hover, 
-#operation-buttons button:hover {
-    background-color: hsl(224, 80%, 55%);
-    border-color: rgb(50, 96, 150);
-}
-#operation-buttons button.down {
-    border-style: inset;
-    background-color: hsl(224, 74%, 35%);
-    border-color: rgb(10, 32, 56);
-}
