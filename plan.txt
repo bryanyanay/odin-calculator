@@ -36,4 +36,19 @@ we'll also have the operation button stay toggled on while it is in action
  - so an executeOperation will detoggle the button toggled on by the prepareOperation
  - so a prepareOperation will toggle the selected button on
 
+we won't store the prev result or the current operation or anything in global variables, we'll just
+get them from the page (e.g., to get the current result, find the button that is currently down)
+
+----------------------------------------
+actually, after we display a result of a calculation, if the user enters new numbers we want to replace the current
+result with the new input (and not append the new input to the current stuff in the input field)
+ - so when you have smth in the input field, and you press a button, it seems like there are 2 cases:
+ 1. the stuff in the input field was the result of a previous calculation, and so you wipe the field and start entering new number
+ 2. the stuff in the input field is you in the middle of entering a new number
+
+ also if the number gets too big for our calculator to display, we must do smth abt that
+  - maybe display TOO BIG?
+
+also, add a visual effect on click, and not just hover  
+
 
