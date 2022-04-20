@@ -54,7 +54,7 @@ function calcResult(a, b, operator) {
             result = a/b;
             break;
     }
-    result = result.toString();
+    result = result.toLocaleString('fullwide', { useGrouping: false }); // instead of toString(), to prevent scientific notation
     if (result.length > displayMax) {
         if (result.includes(".")) // actually, there might be a problem here if we truncate everything after the decimal point, but not the point
             return result.substring(0, displayMax);
