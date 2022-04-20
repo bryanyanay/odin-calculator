@@ -48,7 +48,11 @@ result with the new input (and not append the new input to the current stuff in 
 
  also if the number gets too big for our calculator to display, we must do smth abt that
   - maybe display TOO BIG?
+  - altho it could also be too negative...
 
 also, add a visual effect on click, and not just hover  
+
+!!! if there's an error string, in the input field, we should only allow them to enter a new number;
+ - they shouldn't be allowed to perform an operation with the string or smth
 
 
