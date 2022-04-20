@@ -10,11 +10,11 @@
     box-sizing: border-box;
     width: 350px;
     height: 450px;
-    padding: 20px;
+    padding: 25px;
     margin: 50px auto;
 
-    border: 6px rgb(158, 158, 158) outset;
-    border-radius: 5%;
+    border: 5px rgb(172, 172, 172) outset;
+    border-radius: 30px;
 
     background-color: lightgrey;
 
@@ -71,7 +71,7 @@ button:hover {
     background-color: rgb(207, 207, 207);
 }
 button:active {
-    background-color: rgb(160, 160, 160);
+    background-color: rgb(194, 194, 194);
 }
 
 
@@ -123,9 +123,9 @@ button:active {
     height: 100px;
     padding: 15px 20px;
 
-    border: 3px grey inset;
+    border: 3px rgb(54, 54, 54) inset;
     border-radius: 0.5em;
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(54, 54, 54);
 
     color: white;
 
